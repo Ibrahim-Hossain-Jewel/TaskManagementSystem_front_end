@@ -30,7 +30,7 @@ export default class Signup extends React.Component{
     	evt.preventDefault();
 		
     	let self = this;
-		axios.post(`https://taskmanagement-api.onrender.com/api/register`, self.state.form, {
+		axios.post(`https://taskmanagement.onrender.com/api/register`, self.state.form, {
 			'Content-Type': 'application/json'
 			})
 		  .then(function (response) {

@@ -52,7 +52,7 @@ import { Link } from 'react-router-dom';
       this.state.form.email = decodedEmail;
       let self = this;
       console.log("checking data", this.state.form);
-      axios.post(`https://taskmanagement-api.onrender.com/api/note/add`, this.state.form)
+      axios.post(`https://taskmanagement.onrender.com/api/note/add`, this.state.form)
         .then(res => {
           self.setState({show: true});
           // this.state.form.email = '';
